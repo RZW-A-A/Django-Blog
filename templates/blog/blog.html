@@ -1,0 +1,254 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body style="background-color: black">
+
+    <div class="p-3 mb-2 bg-primary text-white">
+        <div class="container">
+        <h3 style="color: black">Welcome to My Django Blog!</h3>
+        <h3 style="color: black">The Best Framework Ever.</h3>
+        </div>
+    </div>
+
+<br><br>
+    <div style="border : 2px solid white; margin: 20px; background-color: black">
+        <h1 class="text-primary" style="margin: 20px; color: white">What Is Django and Who Created Django?</h1>
+        <div style="margin: 20px">
+            <p style="color: white">Django is an open-source web framework, written in Python, that follows the model-view-template architectural pattern. Consequently, a web framework is just a set of components that help you to develop websites faster and easier. Basically, it is pre-made snippets of code, that have already been tested and debugged, that can be used alongside your own code. This allows for quick and easy setup of complex and intricate code without having to worry about developing the base or framework.</p>
+            <p style="color: white">Django was created in the fall of 2003, when the web programmers at the Lawrence Journal-World newspaper, <b class="text-primary">Adrian Holovaty</b> and <b class="text-primary">Simon Willison</b>, began using Python to build applications.</p>
+        </div>
+    </div>
+<br><br>
+        <div class="row"  style="margin: 20px" >
+            <div class="col-sm-9" style="border : 2px solid white">
+                <h1 class="text-primary" style="margin: 20px; color: white">Adrian Holovaty</h1>
+                <p style="color: white">Adrian Holovaty (born 1981) is an American web developer, journalist and entrepreneur from Chicago, Illinois, living in Amsterdam, the Netherlands. He is co-creator of the Django web framework and an advocate of "journalism via computer programming".</p>
+                <p style="color: white">Holovaty, a Ukrainian American, grew up in Naperville, Illinois and attended Naperville North High School. While serving as co-editor of the high school's newspaper, The North Star, a censored article about a faculty member sexually assaulting a student reignited an anti-censorship in the Illinois house of representatives. He graduated from the Missouri School of Journalism in 2001 and worked as a web developer/journalist.</p>
+            </div>
+            <div class="col-sm-3">
+                <img style="float: left;width:  300px; height: 300px;object-fit: cover;" src="{% static 'blog/img/adrian1.png' %}" />
+            </div>
+        </div>
+<br><br>
+        <div class="row"  style="margin: 20px" >
+            <div class="col-sm-3">
+                <img style="float: left;width:  330px; height: 300px;object-fit: cover;" src="{% static 'blog/img/simon.jpg' %}" />
+            </div>
+            <div class="col-sm-9" style="border : 2px solid white">
+                <h1 class="text-primary" style="margin: 20px; color: white">Simon Willison</h1>
+                <p style="color: white">Simon Willison is a British programmer, co-founder of the social conference directory Lanyrd, and Director of Architecture at Eventbrite. Originating from the UK, he currently resides in San Francisco, California. Simon is a co-creator of the Django Web framework and is a frequent public speaker.</p>
+                <p style="color: white">Simon started his professional web development in 2000 as a web master and developer for the UK based website Gameplay, where he was instrumental in creating File Monster, a large games related file download site. In 2001 he left to attend the University of Bath. Whilst studying, he worked part-time for Incutio where he developed the Incutio XML-RPC Library, a popular XML-RPC library for PHP (used in WordPress and Drupal).[2] During this time Simon started his web development blog. In developing the software for his blog, Simon built one of the first implementations of Pingback.[3] Through his blog he was an early adopter and evangelist of OpenID.</p>
+            </div>
+
+        </div>
+
+<br><hr color="white"><br>
+
+    <div class="container">
+        <h1 class="text-primary" ALIGN="center">DJANGO VERSIONS</h1>
+        <br>
+        <table class="table table-hover table-dark">
+          <tbody>
+            <tr class="bg-primary">
+              <td><b>Release Series</b></td>
+                <td><b>Latest Release</b></td>
+                <td><b>End of mainstream support1</b></td>
+              <td><b>End of extended support2</b></td>
+            </tr>
+            <tr class="bg-primary">
+              <td>3.1</td>
+              <td>3.1.1</td>
+              <td>April, 2021</td>
+              <td>December, 2021</td>
+            </tr>
+            <tr class="bg-primary">
+              <td>3.0</td>
+              <td>3.0.10</td>
+              <td>August, 2020</td>
+                <td>April, 2021</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>2.2 LTS</td>
+              <td>2.2.16</td>
+              <td>December 2, 2019</td>
+              <td>April, 2022</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>2.1</td>
+              <td>2.1.15</td>
+              <td>April 1, 2019</td>
+              <td>December 2, 2019</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>2.0</td>
+              <td>2.0.13</td>
+              <td>August 1, 2018</td>
+              <td>April 1, 2019</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.11 LTS</td>
+              <td>1.11.29</td>
+              <td>December 2, 2017</td>
+              <td>April 1, 2020</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.10</td>
+              <td>1.10.8</td>
+              <td>April 4, 2017</td>
+              <td>December 2, 2017</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.9</td>
+              <td>1.9.13</td>
+              <td>August 1, 2016</td>
+              <td>April 1, 2018</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.8 LTS</td>
+              <td>1.8.19</td>
+              <td>December 1, 2015</td>
+              <td>April 1, 2018</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.7</td>
+              <td>1.7.11</td>
+              <td>April 1, 2015</td>
+              <td>December 1, 2015</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.6</td>
+              <td>1.6.11</td>
+              <td>September 2, 2014</td>
+              <td>April 1, 2014</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.5</td>
+              <td>1.5.12</td>
+              <td>November 6, 2013</td>
+              <td>September 2, 2014</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.4 LTS</td>
+              <td>1.4.22</td>
+              <td>February 26,2013</td>
+              <td>October 1, 2015</td>
+            </tr>
+          <tr class="bg-primary">
+              <td>1.3</td>
+              <td>1.3.7</td>
+              <td>March 23, 2013</td>
+              <td>February 26, 2013</td>
+            </tr>
+
+          </tbody>
+        </table>
+    </div>
+<br><br><br>
+    <div class="container">
+        <div class="card text-white bg-primary mb-3">
+          <img src="{% static 'blog/img/dj.png' %}" class="card-img-top" style="float: left;width:  1107px; height: 250px;object-fit: cover" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Get Started!</h5>
+            <p class="card-text">Django is available open-source under the BSD license. We recommend using the latest version of Python 3. The last version to support Python 2.7 is Django 1.11 LTS. See the FAQ for the Python versions supported by each version of Django. Here’s how to get it:</p>
+            <a href="https://www.djangoproject.com/download/" class="btn btn-success btn-lg" role="button" aria-pressed="true">Download Here</a>
+
+          </div>
+        </div>
+    </div>
+
+    <br><hr color="white"><br>
+            <h1 class="text-primary" align="center">Top 10 Applications build by Django</h1>
+    <br>
+
+    <div class="card-group" style="margin: 20px">
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">Disqus</h5></div>
+          <div class="card-body">
+            <p class="card-text">This is one of the largest Django projects so far. Mostly recognized as a popular and easy-to-use plug-in for comments, it also features an advanced analytics tool and configurable ad serving.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">Instagram</h5></div>
+          <div class="card-body">
+            <p class="card-text">This Python-based photo and video-sharing social network is crazy popular, and it needs to process huge amounts of data and manage an even greater number of interactions between users every single second.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">Spotify</h5></div>
+          <div class="card-body">
+            <p class="card-text">It wouldn’t be an exaggeration to say that Spotify has revolutionized the way people listen to music, making its wide library accessible to everyone on any device. There are options to either use it for free or buy an ad-free subscription plan.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">YouTube</h5></div>
+          <div class="card-body">
+            <p class="card-text">There’s no need to introduce this website, since it’s already become a synonym for the term “video-sharing platform”. Originally it was a PHP-based project, but the constant need to improve its performance and add new functionalities forced YT to turn to Python as well.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">The Washington Post</h5></div>
+          <div class="card-body">
+            <p class="card-text">Django allows The Washington Post website to handle huge traffic, providing fast and efficient performance. For the same reason, the framework is also leveraged by The Guardian, the satirical newspaper The Onion, and partially by The New York Times, as well.</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="card-group" style="margin: 20px">
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">Prezi</h5></div>
+          <div class="card-body">
+            <p class="card-text">Prezi is a beautifully designed web-based presentation software - a pretty powerful alternative to Microsoft PowerPoint. It features a map-like overview with zoom-in/zoom-out options instead of the classic slide-based format.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">BitBucket</h5></div>
+          <div class="card-body">
+            <p class="card-text">This cloud-based Git repository hosting service was launched in 2008. Ten years later, the platform is used by millions of developers, who in 2017 alone merged 17 million pull requests and created 6 million repositories. And the core technology behind it is Python paired with the Django framework.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">Dropbox</h5></div>
+          <div class="card-body">
+            <p class="card-text">Dropbox is one of the most popular cloud storage services for documents, videos, pictures, and so on. This online drive is available for various devices, allowing its users to access it anywhere, anytime.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">Eventbrite</h5></div>
+          <div class="card-body">
+            <p class="card-text">The website was launched in 2006 as an event management and ticketing service. It was originally written in Python, on top of a few in-house frameworks that simply became inefficient as the platform experienced rapid growth.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem; margin: 10px">
+          <div class="card-header"><h5 class="card-title">Mozilla</h5></div>
+          <div class="card-body">
+            <p class="card-text">Still one of the most popular and recognizable browsers in the world, Mozilla has to handle tremendous traffic. Not all of its components are written in Python, but all the new ones are, and they also take advantage of Django.</p>
+          </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="p-3 mb-2 bg-primary text-white">
+        <div class="container">
+        <h3 style="color: black">Thank You for visiting My Django Blog!</h3>
+        <h3 style="color: black">The Best Framework Ever.</h3>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
